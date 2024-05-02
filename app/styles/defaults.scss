@@ -1,0 +1,18 @@
+@import './typography.scss';
+
+/* ---------- Defaults ---------- */
+*,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    font-size: $paragraph;
+    color: $color_light;
+    background: $color_dark;
+    margin: auto;
+}

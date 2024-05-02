@@ -1,0 +1,30 @@
+/* ---------- Color variables ---------- */
+$color_dark: #0D1004;
+$color_dark_tuned: #0D100460;
+$color_primary: #AFD051;
+$color_primary_tuned: #AFD05135;
+$color_light: #F9FCF3;
+
+// Typography scale
+$link_small: clamp(0.68rem, -0.01vi + 0.69rem, 0.68rem);
+$link: clamp(0.85rem, 0.06vi + 0.84rem, 0.9rem);
+$paragraph: clamp(1.07rem, 0.16vi + 1.02rem, 1.2rem);
+$header_4: clamp(1.33rem, 0.32vi + 1.25rem, 1.6rem);
+$header_3: clamp(1.67rem, 0.56vi + 1.52rem, 2.13rem);
+$header_2: clamp(2.08rem, 0.92vi + 1.84rem, 2.84rem);
+$header_1: clamp(2.6rem, 1.43vi + 2.22rem, 3.79rem);
+
+// Spacing scale
+$small: clamp(0.875rem, 0.8315rem + 0.2174vi, 1rem);
+$medium: clamp(1.75rem, 1.663rem + 0.4348vi, 2rem);
+$large: clamp(2.625rem, 2.4946rem + 0.6522vi, 3rem);
+
+// Border radius
+$radius_lg: calc($large * 0.5);
+$radius_md: calc($medium * 0.5);
+$radius_sm: calc($small * 0.5);
+
+// Box shadow
+$shadow_sm: 0 3px 12px 0 rgba(0, 0, 0, 0.16);
+$shadow_md: 0 6px 24px 0 rgba(0, 0, 0, 0.16);
+$shadow_lg: 0 9px 36px 0 rgba(0, 0, 0, 0.16);

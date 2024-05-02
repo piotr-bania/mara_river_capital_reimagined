@@ -1,0 +1,89 @@
+@import '../../globals.scss';
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - $large * 2);
+    margin: $large;
+    background-color: $color_dark_tuned;
+
+    nav {
+        grid-area: 1 / 1 / 2 / 13;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+
+        .logo {
+            img {
+                width: calc($large * 4);
+                height: auto;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+            text-transform: uppercase;
+            gap: $small;
+
+            .link {
+                display: flex;
+                align-items: center;
+                gap: $small;
+
+                &:after {
+                    position: relative;
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    background-color: $color_primary;
+                    width: calc($large * 1);
+                    height: 1px;
+                    transition: background-color .5s ease-in-out, width .5s ease-in-out;
+                }
+
+                &:hover:after {
+                    background-color: $color_light;
+                    width: calc($large * 1.5);
+                }
+            }
+
+            .active_link {
+                color: $color_light;
+                pointer-events: none;
+
+                &:after {
+                    background-color: $color_light;
+                    width: calc($large * 1.5);
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        nav {
+            grid-area: 1 / 1 / 2 / 9;
+
+            .logo {
+                img {
+                    width: calc($large * 3.5);
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        nav {
+            grid-area: 1 / 1 / 2 / 7;
+
+            .logo {
+                img {
+                    width: calc($large * 3);
+                }
+            }
+        }
+    }
+}

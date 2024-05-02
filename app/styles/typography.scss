@@ -1,0 +1,61 @@
+/* ---------- Font faces ---------- */
+@font-face {
+    font-family: 'Canela Thin';
+    src: url(../../public/fonts/canela/Canela_Thin.otf);
+}
+
+@font-face {
+    font-family: 'rtRondelle Light';
+    src: url(../../public/fonts/rtRondelle/rtRondelle_Extra_Light.otf);
+}
+
+/* ---------- Typography styles ---------- */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Canela Thin', sans-serif;
+    color: $color_primary;
+    font-weight: 100;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: $header_1;
+}
+
+h2 {
+    font-size: $header_2;
+}
+
+h3 {
+    font-size: $header_3;
+}
+
+h4 {
+    font-size: $header_4;
+}
+
+p {
+    font-family: 'rtRondelle Light', sans-serif;
+    font-size: $paragraph;
+    color: $color_light;
+    line-height: 1.4;
+}
+
+a {
+    font-family: 'rtRondelle Light', sans-serif;
+    font-size: $link;
+    color: $color_primary;
+    text-decoration: none;
+    transition: color .5s ease-in-out;
+
+    &:hover {
+        color: $color_light;
+    }
+}
+
+button {
+    font-family: 'rtRondelle Light', sans-serif;
+    font-size: $link;
+}
